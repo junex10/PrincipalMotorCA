@@ -1,0 +1,31 @@
+{
+  "name": "principal",
+  "version": "1.0.0",
+  "ProductName": "Principal motor CA",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "ejs-electron": "^2.0.3",
+    "electron-dl": "^3.0.1",
+    "electron-packager": "^14.2.1",
+    "electron-pdf": "^7.0.0",
+    "electron-pdf-window": "^1.0.12",
+    "electron-reload": "^1.5.0",
+    "html-pdf": "^2.2.0",
+    "jquery": "^3.6.0",
+    "jspdf": "^1.5.3",
+    "mysql": "^2.18.1",
+    "serialize-javascript": "^5.0.1"
+  },
+  "devDependencies": {
+    "electron": "^9.1.0"
+  },
+  "scripts": {
+    "start": "electron app.js",
+    "package-win": "electron-packager . principal_motors_ca-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=frontend/static/icons/win/logo.png --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"principal_motors_ca\"",
+    "package-linux": "electron-packager . principal_motors_ca-app --overwrite --asar=true --platform=linux --arch=x64 --icon=frontend/static/icons/win/logo.png --prune=true --out=release-builds"
+  },
+  "keywords": [],
+  "author": "Jose Herrada",
+  "license": "ISC"
+}

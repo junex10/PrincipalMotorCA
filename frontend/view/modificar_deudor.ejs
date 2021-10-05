@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./template/head") %>
+        <title>Principal motors CA | Modificar deudor</title>
+        <link rel='stylesheet' href='./../static/css/nueva_venta.css'>
+        <script>
+            window.jQuery = window.$ = require('jquery');
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h1>Modificar deudor</h1>
+                    <br><br>
+                </div>
+                <form id="producto" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <h2>Deudor</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="usuario" id="usuario" class="form-control"
+                            readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Descripcion</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="descripcion" id="descripcion" class="form-control"
+                            placeholder="Descripcion" required>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Deuda en bolivares</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="deuda_bs" id="deuda_bs" class="form-control"
+                            placeholder="Deuda..." required>
+                    </div>
+                    <div class="form-group">
+                        <h2>Deuda en dolares</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="deuda_usd" id="deuda_usd" class="form-control"
+                            placeholder="Deuda..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Estado</h2>
+                    </div>
+                    <div class="form-group">
+                        <select name="estado" id="estado" class="form-control" required>
+                            <option value="0">Seleccione el estado</option>
+                        </select>
+                    </div>
+
+                    <!-- Datos generada -->
+
+                     <div class="form-group">
+                        <h2>Calculando deudas totales</h2>
+                    </div>
+
+                    <div class="factura">
+                        <%- include("./template/deudores_plantilla") %>
+                    </div>
+
+                    <!--Datos generada -->
+
+                    <button type="submit" class="btn btn-primary" id="submit">Modificar deudor</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type='text/javascript' src='./../static/lib/bootstrap/js/bootstrap.bundle.js'></script>
+    <script type='text/javascript' src='./../static/js/configuracion/modificar/modificar_deudor.js'></script>
+</body>
+
+</html>

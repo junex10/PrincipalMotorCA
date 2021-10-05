@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./template/head") %>
+        <title>Principal motors CA | Nueva marca</title>
+        <link rel='stylesheet' href='./../static/css/nueva_venta.css'>
+        <script>
+            window.jQuery = window.$ = require('jquery');
+        </script>
+</head>
+
+<body class='fondo_black'>
+    <div class="container">
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h1>Agregar nueva marca</h1>
+                    <br><br>
+                </div>
+                <form id="producto" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <h2>Nombre de la marca</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="marca" id="marca" class="form-control"
+                            placeholder="Marca" required>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Distribuidor</h2>
+                    </div>
+                    <div class="form-group">
+                        <select name="distribuidor" id="distribuidor" class="form-control" required>
+                            <option value="0">Seleccione el distribuidor</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="submit">Registrar nueva marca</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type='text/javascript' src='./../static/lib/bootstrap/js/bootstrap.bundle.js'></script>
+    <script type='text/javascript' src='./../static/js/configuracion/nueva_marca.js'></script>
+</body>
+
+</html>

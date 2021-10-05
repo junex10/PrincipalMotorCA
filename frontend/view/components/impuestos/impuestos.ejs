@@ -1,0 +1,25 @@
+<div class='row'>
+    <div class='col-lg-12'>
+        <button id='nuevo_impuesto' role='button' class='btn btn-primary'><i class="fas fa-money-bill"></i> Nuevo
+            Impuesto</button>
+    </div>
+
+    
+    <div class='col-lg-12 col-sm-12 col-md-12 col-12' style='position: relative;top:30px'>
+
+        <div class='row'>
+            <div class='col-lg-12' style='margin-top: 40px;'>
+                <div class="btn-group btn-group-danger">
+                    <button class="btn btn-primary" type="button">Filtros</button>
+                    <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button"></button>
+                    <ul class="dropdown-menu" id="filtro_dropdown">
+                        <li class="list_filtro active" onclick='changeTable(this)' id="producto_disponible"><a href="#">Disponible</a></li>
+                        <li class="list_filtro" onclick='changeTable(this)' id="producto_noDisponible"><a href="#">No disponible</a></li>
+                    </ul>
+                </div>
+            </div>
+            <%- include("./tables") %>
+        </div>
+    </div>
+</div>
+<script type='text/javascript' src='./../static/js/configuracion/impuesto.js'></script>

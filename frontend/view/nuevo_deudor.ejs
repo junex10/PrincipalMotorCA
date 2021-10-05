@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./template/head") %>
+        <title>Principal motors CA | Nueva deuda</title>
+        <link rel='stylesheet' href='./../static/css/nueva_venta.css'>
+        <script>
+            window.jQuery = window.$ = require('jquery');
+        </script>
+</head>
+
+<body class='fondo_black'>
+    <div class="container">
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h1>Nueva deuda</h1>
+                    <br><br>
+                </div>
+                <form id="producto" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <h2>Usuario</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <select class='form-control' id='usuario'>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Descripcion de la deuda</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="descripcion" id="descripcion" class="form-control"
+                            placeholder="Descripcion..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Deuda Bolivares</h2>
+                    </div>
+                    <div class="form-group">
+                        <input type='text' class='form-control' onkeypress='return event.charCode >= 48 && event.charCode <= 57' name='deuda_bs' id='deuda_bs'>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Deuda Dolares</h2>
+                    </div>
+                    <div class="form-group">
+                        <input type='text' class='form-control' onkeypress='return event.charCode >= 48 && event.charCode <= 57' name='deuda_usd' id='deuda_usd'>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="submit">Registrar nuevo deudor</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type='text/javascript' src='./../static/lib/bootstrap/js/bootstrap.bundle.js'></script>
+    <script type='text/javascript' src='./../static/js/configuracion/nuevo_deudor.js'></script>
+</body>
+
+</html>

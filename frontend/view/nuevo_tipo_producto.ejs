@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./template/head") %>
+        <title>Principal motors CA | Nuevo tipo de producto</title>
+        <link rel='stylesheet' href='./../static/css/nueva_venta.css'>
+        <script>
+            window.jQuery = window.$ = require('jquery');
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h1>Agregar nuevo tipo de producto</h1>
+                    <br><br>
+                </div>
+                <form id="producto" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <h2>Nombre del tipo de producto</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="tipo_producto" id="tipo_producto" class="form-control"
+                            placeholder="Tipo de producto" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="submit">Registrar nuevo tipo de producto</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type='text/javascript' src='./../static/lib/bootstrap/js/bootstrap.bundle.js'></script>
+    <script type='text/javascript' src='./../static/js/configuracion/nuevo_tipo_producto.js'></script>
+</body>
+
+</html>

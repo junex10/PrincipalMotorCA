@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./template/head") %>
+        <title>Principal motors CA | Nueva venta</title>
+        <link rel='stylesheet' href='./../static/css/nueva_venta.css'>
+        <script>
+            window.jQuery = window.$ = require('jquery');
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h1>Agregar nueva venta</h1>
+                    <br><br>
+                </div>
+                <form id="venta" enctype="multipart/form-data">
+
+                    <!-- Opcional -->
+                    <div class="form-group">
+                        <h2>Tipo de producto en venta (Opcional)</h2>
+                    </div>
+
+                    <!-- Opcional -->
+                    <div class="form-group">
+                        <select name="type_producto" id="type_producto" class="form-control" required>
+                            <option value="0">Selecciona un tipo de producto</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Producto(s) en venta</h2>
+                    </div>
+
+                    <!-- Opcional -->
+                    <div class="form-group">
+                        <select name="producto" id="producto" class="form-control" required>
+                            <option value="0">Selecciona un producto</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Tipo de pago</h2>
+                    </div>
+                    <div class="form-group">
+                        <select name="tipo_pago" id="tipo_pago" class="form-control" required>
+                            <option value="0">Seleccione tipo de pago</option>
+                            <option class='tipo_pago_option' value="pago_movil">Pago movil</option>
+                            <option class='tipo_pago_option' value="punto">Punto</option>
+                            <option class='tipo_pago_option' value="transferencia">Transferencia
+                            </option>
+                            <option class='tipo_pago_option' value="dolares">Dolares</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Impuesto</h2>
+                    </div>
+                    <div class="form-group">
+                        <select name="impuesto" id="impuesto" class="form-control" required>
+                            <option value="0">Seleccione el impuesto (opcional)</option>
+                        </select>
+                    </div>
+
+                    <!-- Factura generada -->
+
+                    <div class="form-group">
+                        <h2>Calculando el precio de la venta</h2>
+                    </div>
+
+                    <div class="factura">
+                        <%- include("./template/factura") %>
+                    </div>
+
+                    <!--End Factura generada -->
+
+                    <button type="button" class="btn btn-primary" id="submit">Registrar venta</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script type='text/javascript' src='./../static/lib/bootstrap/js/bootstrap.bundle.js'></script>
+    <script type='text/javascript' src='./../static/js/ventas/events_new_sale/variables.js'></script>
+    <script type='text/javascript' src='./../static/js/ventas/events_new_sale/funciones.js'></script>
+    <script type='text/javascript' src='./../static/js/ventas/nueva_venta.js'></script>
+</body>
+
+</html>

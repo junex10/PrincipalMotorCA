@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./template/head") %>
+        <title>Principal motors CA | Nuevo producto</title>
+        <link rel='stylesheet' href='./../static/css/nueva_venta.css'>
+        <script>
+            window.jQuery = window.$ = require('jquery');
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h1>Agregar nuevo producto al inventario</h1>
+                    <br><br>
+                </div>
+                <form id="producto" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <h2>Nombre del producto</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="producto" id="producto_nombre" class="form-control"
+                            placeholder="Nombre del producto" required>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Tipo de producto</h2>
+                    </div>
+                    <div class="form-group">
+                        <select name="tipo_producto" id="tipo_producto" class="form-control" required>
+                            <option value="0">Seleccione el tipo de producto</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Marca</h2>
+                    </div>
+                    <div class="form-group">
+                        <select name="marca" id="marca" class="form-control" required>
+                            <option value="0">Seleccione la marca</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Cantidad disponible</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" stpe='any' name="cantidad" id="cantidad" class="form-control" placeholder="Cantidad">
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Precio en bolivares</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" step="any" name="precio_bolivares" id="precio_bolivares"
+                            class="form-control" placeholder="Precio" required>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Precio en dolares</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" step="any" name="precio_dolares" id="precio_dolares" class="form-control"
+                            placeholder="Precio" required>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Código del producto</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="code_producto" id="code_producto" class="form-control"
+                            placeholder="Código del producto" required>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" id="submit">Registrar nuevo producto</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type='text/javascript' src='./../static/lib/bootstrap/js/bootstrap.bundle.js'></script>
+    <script type='text/javascript' src='./../static/js/inventario/nuevo_producto.js'></script>
+</body>
+
+</html>

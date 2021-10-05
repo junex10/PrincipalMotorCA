@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./template/head") %>
+    <title>Principal motors CA | Impuestos</title>
+        <script>
+            window.jQuery = window.$ = require('jquery');
+        </script>
+</head>
+
+<body>
+    <%- include("./template/header") %>
+        <section class="page-content">
+            <%- include("./components/impuestos/impuestos") %>
+            <%- include("./template/footer") %>
+        </section>
+
+        <script type='text/javascript' src='./../static/lib/bootstrap/js/bootstrap.bundle.js'></script>
+        <%- include("./template/datatable") %>
+        <script type='text/javascript' src='./../static/js/dashboard.js'></script>
+        
+</body>
+
+</html>

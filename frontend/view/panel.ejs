@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./template/head") %>
+    <title>Principal motors CA | Panel</title>
+        <script>
+            window.jQuery = window.$ = require('jquery');
+        </script>
+    <script type='text/javascript' src='./../static/lib/echart/dist/echarts.js'></script>
+</head>
+
+<body>
+    <%- include("./template/header") %>
+        <section class="page-content">
+            <%- include("./components/panel/graficas") %>            
+            <%- include("./template/footer") %>
+        </section>
+
+        <script type='text/javascript' src='./../static/lib/bootstrap/js/bootstrap.bundle.js'></script>
+        <%- include("./template/datatable") %>
+        <script type='text/javascript' src='./../static/js/dashboard.js'></script>
+        <script type='text/javascript' src='./../static/js/panel/panel.js'></script>
+        
+        <script src='./../static/js/panel/ventas_graficas.js' type='text/javascript'></script>
+        <script type='text/javascript' src='./../static/js/ventas/rango_fechas.js'></script>
+        <script src='./../static/js/panel/inventario_graficas.js' type='text/javascript'></script>
+        
+</body>
+
+</html>

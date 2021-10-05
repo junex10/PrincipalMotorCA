@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./template/head") %>
+        <title>Principal motors CA | Ventas por rango de fechas</title>
+        <link rel='stylesheet' href='./../static/css/nueva_venta.css'>
+        <script>
+            window.jQuery = window.$ = require('jquery');
+        </script>
+        <script type='text/javascript' src='./../static/lib/echart/dist/echarts.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form boxShadow boxBounded">
+            <div class="main-div">
+                <div class="panel">
+                    <h1>Ventas por rango de fechas</h1>
+                    <br><br>
+                </div>
+                <form id="venta" enctype="multipart/form-data">
+                    <div class='row'>
+                        <div class='col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12'>
+                            <div class="form-group">
+                                <h2>Fecha inicial</h2>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="date" name="fecha_inicial" id="fecha_inicial" class="form-control"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class='col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12'>
+                            <div class="form-group">
+                                <h2>Fecha final</h2>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="date" name="fecha_final" id="fecha_final" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class='row'>
+                    <div class='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12'>
+                        <div id='rango_fechas_graphic' class='graphic'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type='text/javascript' src='./../static/js/ventas/rango_fechas.js'></script>
+</body>
+
+</html>

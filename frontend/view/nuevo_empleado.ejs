@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./template/head") %>
+        <title>Principal motors CA | Nuevo empleado</title>
+        <link rel='stylesheet' href='./../static/css/nueva_venta.css'>
+        <script>
+            window.jQuery = window.$ = require('jquery');
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h1>Agregar nuevo empleado</h1>
+                    <br><br>
+                </div>
+                <form id="producto" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <h2>Nombre(s) y Apellido(s) nuevo del empleado</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="usuario" id="usuario" class="form-control"
+                            placeholder="Nombres..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Identificación</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="numero_identificacion" id="numero_identificacion" class="form-control"
+                            placeholder="Identificacion..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Salario bolivares</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="salario_bs" id="salario_bs" class="form-control"
+                            placeholder="Salario bs..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Salario dolares</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="salario_usd" id="salario_usd" class="form-control"
+                            placeholder="Salario usd..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Tipo de Identificación</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <select class='form-control' name='tipo_identificacion' id='tipo_identificacion'>
+                            <option name='V'>V</option>
+                            <option name='E'>E</option>
+                            <option name='J'>J</option>
+                            <option name='P'>P</option>
+                            <option name='G'>G</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Cargo</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <select class='form-control' name='tipo_rol' id='tipo_rol'>
+                            
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" id="submit">Registrar nuevo empleado</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type='text/javascript' src='./../static/lib/bootstrap/js/bootstrap.bundle.js'></script>
+    <script type='text/javascript' src='./../static/js/configuracion/nuevo_empleado.js'></script>
+</body>
+
+</html>

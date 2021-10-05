@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./template/head") %>
+        <title>Principal motors CA | Nuevo impuesto</title>
+        <link rel='stylesheet' href='./../static/css/nueva_venta.css'>
+        <script>
+            window.jQuery = window.$ = require('jquery');
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h1>Agregar nuevo impuesto</h1>
+                    <br><br>
+                </div>
+                <form id="producto" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <h2>Nombre del impuesto</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="impuesto" id="impuesto" class="form-control"
+                            placeholder="Impuesto" required>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Porcentaje del impuesto</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" name="porcentaje" max='100' min='0' id="porcentaje" class="form-control"
+                            placeholder="1" required>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" id="submit">Registrar nuevo impuesto</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type='text/javascript' src='./../static/lib/bootstrap/js/bootstrap.bundle.js'></script>
+    <script type='text/javascript' src='./../static/js/configuracion/nuevo_impuesto.js'></script>
+</body>
+
+</html>

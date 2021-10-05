@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                </div>
+            </div>
+
+        </div>
+        <pre></pre>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="text-align: center;">
+                        <h4>Cantidad</h4>
+                    </th>
+                    <th style="text-align: center;">
+                        <h4>Producto(s)</h4>
+                    </th>
+                    <th style="text-align: center;">
+                        <h4>Precio unitario</h4>
+                    </th>
+                    <th style="text-align: center;">
+                        <h4>ACCIONES</h4>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="factura">
+                <tr>
+                    <td colspan='4'>No se ha agregado productos</td>
+                </tr>
+                <!--<tr>
+                    <td>ds</td>
+                    <td>ds</td>
+                    <td>ds</td>
+                    <td>
+                        <div class='row'>
+                            <div style='cursor:pointer' title='Modificar' class='col-lg-6 col-12'>
+                                <i style='color:var(--verde)' class="fas fa-minus-circle"></i>
+                            </div>
+                            <div style='cursor:pointer' title='Borrar' class='col-lg-6 col-12'>
+                                <i style='color:var(--danger)' class="fas fa-plus-circle"></i>
+                            </div>
+                        </div>
+                    </td>
+                </tr>-->
+            </tbody>
+            <tr id='datos_impuestos'>
+                <!--<tr><td colspan="4" style="text-align: left;">IVA: <b><span class='impuesto_bs'>0</span> Bs</b> / <b><span class='impuesto_usd'>0</span>$</b></td></tr>-->
+            </tr>
+            <tr id='subtotalidad'>
+                <td colspan="4" style="text-align: left;">SubTotal: <b><span id='sub_bolivares'>0</span> Bs</b> / <b><span
+                    id='sub_dolares'>0</span>$</b></td><br>
+            </tr>
+            <tr id="totalidad">
+                <td colspan="4" style="text-align: left;">Total: <b><span id='bolivares'>0</span> Bs</b> / <b><span
+                            id='dolares'>0</span>$</b></td><br>
+            </tr>
+        </table>
+    </div>
+</div>

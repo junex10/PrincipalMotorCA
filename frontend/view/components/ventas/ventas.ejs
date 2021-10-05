@@ -1,0 +1,37 @@
+<div class='row'>
+    <div class='col-lg-10 col-md-10 col-sm-12 col-12'>
+        <button id='nueva_venta' role='button' class='btn btn-primary'><i class="fas fa-cart-arrow-down"></i> Nueva
+            venta</button>
+    </div>
+    <div class='col-lg-2 col-md-2 col-sm-12 col-12'>
+        <button id='pdf_mes' role='button' class='btn btn-primary'><i class="fas fa-file-pdf"></i> Ventas del mes</button>
+    </div>
+
+    <div class='col-lg-12 col-sm-12 col-md-12 col-12' style='position: relative;top:30px'>
+        <div class='row' style='display:flex;justify-content:center;'>
+            <%- include("./card_ventas") %>
+        </div>
+
+        <div class='row'>
+            <div class='col-lg-12' style='margin-top: 40px;'>
+                <div class="btn-group btn-group-danger">
+                    <button class="btn btn-primary" type="button">Tipo de ventas</button>
+                    <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button"></button>
+                    <ul class="dropdown-menu" id="filtro_dropdown">
+                        <li class="list_filtro active" onclick='changeTable(this)' id="ventas_diaria"><a href="#">Ventas diarias</a></li>
+                        <li class="list_filtro" onclick='changeTable(this)' id="ventas_semanal"><a href="#">Ventas semanales</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <%- include("./tables") %>
+
+        </div>
+    </div>
+</div>
+<script type='text/javascript' src='./../static/js/ventas/reportes/reportes.js'></script>
+<script type='text/javascript' src='./../static/js/ventas/reportes/events/event_pdf_mes.js'></script>
+<script type='text/javascript' src='./../static/js/ventas/reportes/events/event_pdf_sale.js'></script>
+<script type='text/javascript' src='./../static/js/ventas/reportes/reportSaleActualMonth.js'></script>
+<script type='text/javascript' src='./../static/js/ventas/reportes/reportSalePerSale.js'></script>
+<script type='text/javascript' src='./../static/js/ventas/ventas.js'></script>
